@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cake's page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="logo.jpg.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Kalam:wght@300&family=Montserrat:wght@200;400;500&family=Oswald:wght@300;400&family=Playfair+Display&family=Roboto:wght@100;300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class = "big-header">
+        <div class = "header">
+            <img src="logo.jpg.jpg" class = "logo">
+            <div class = "mydiv1">
+                <p class = "p1">Menu</p>
+                <p class = "p2"><a href="file:///C:/Users/ADMIN/Desktop/firstProject/about.html" target="_blank">About us</p></a>
+                <p class = "p3">Blog</p>
+                <p class = "p4" id = "p4">More</p>
+            </div>
+            <div class = "mydiv2">
+                <i class="fa fa-shopping-basket" aria-hidden="true"><p id = "list"></p></i>
+                <p></p>
+                <button class = "btn1" onclick="logIn()" id = "login">Log in</button>
+                <button class = "btn2" onclick="singUp()" id = "signin">Sign Up</button>
+            </div>
+        </div>
+        <div class = "log-in" id = "log-in">
+            <div class = "logIn-box">
+            <i class = "fa fa-close" onclick = "close1()"></i>
+            <h1>Hi everyone!</h1>
+            <p>Your username</p>
+            <input type = "text" class = "inp1"/>
+            <p>Your password</p>
+            <input type = "password" class = "inp1"/>
+            <button>Log in</button>
+            </div>
+        </div>
+        <div class = "sign-up" id = "sign-up">
+            <div class = "signIn-box">
+            <i class = "fa fa-close" onclick = "close2()"></i>
+            <h1>Hi everyone!</h1>
+            <p>Your username</p>
+            <input type = "text" class = "inp2"/>
+            <p>Your password</p>
+            <input type = "password" class = "inp2"/>
+            <p>Repeat your password</p>
+            <input type = "pasword" class = "inp2"/>
+            <p>Your phone number</p>
+            <input type = "text" class = "inp2"/>
+            <p>Enter your email</p>
+            <input type = "email" class = "inp2">
+            <button>Sign in</button>
+        </div>
+        </div>
+
+        <section class = "products">
+            <div class = "title-box">
+                <h1 class = "title">Our Products</h1>
+            </div>
+            <div class = "header2">
+                <div class = "image-box1">
+                    <img src = "https://www.allrecipes.com/thmb/BY8CcWT0JZOjFcWeIem9Fik1x78=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/9266919-c023924050f9406bab6eccea1664e88b.jpg" class = "img1">
+                    <p>Cake 1</p>
+                    <span class = "btnspan">
+                        <button class = "btn" value = "discard">Buy</button>
+                        <button id = "btnplus">+</button>
+                        <button id = "btnminus">-</button>
+                        <span class = "price">20.99$</span>
+                    </span>
+                    <div class = "fav-div">
+                    <div class="fav-div-1">
+                        <span class="span1">Add to favorite</span><i class = "fa fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class = "image-box1">
+                    <img src = "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1542062283%2Fchocolate-and-cream-layer-cake-1812-cover.jpg%3Fitok%3DrEWL7AIN" class = "img1">
+                    <p>Cake 2</p>
+                    <span class = "btnspan">
+                        <button class = "btn" value = "discard">Buy</button>
+                        <button id = "btnplus">+</button>
+                        <button id = "btnminus">-</button>
+                        <span class = "price">20.99$</span>
+                    </span>
+                    <div class = "fav-div">
+                    <div class="fav-div-1">
+                        <span class="span1">Add to favorite</span><i class = "fa fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class = "image-box1">
+                    <img src = "https://www.sbs.com.au/food/sites/sbs.com.au.food/files/my_perfect_vanilla_cake_2_0.jpg" class = "img1">
+                    <p>Cake 3</p>
+                    <span class = "btnspan">
+                        <button class = "btn" value = "discard">Buy</button>
+                        <button id = "btnplus">+</button>
+                        <button id = "btnminus">-</button>
+                        <span class = "price">20.99$</span>
+                    </span>
+                    <div class = "fav-div">
+                    <div class="fav-div-1">
+                        <span class="span1">Add to favorite</span><i class = "fa fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "header2">
+                <div class = "image-box1">
+                    <img src = "https://www.giftjaipur.com/image/cache/catalog/products%20images/cake-6-500x500.jpg" class = "img1">
+                    <p>Cake 4</p>
+                    <span class = "btnspan">
+                        <button class = "btn" value = "discard">Buy</button>
+                        <button id = "btnplus">+</button>
+                        <button id = "btnminus">-</button>
+                        <span class = "price">20.99$</span>
+                    </span>
+                    <div class = "fav-div">
+                    <div class="fav-div-1">
+                        <span class="span1">Add to favorite</span><i class = "fa fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class = "image-box1">
+                    <img src = "https://hips.hearstapps.com/del.h-cdn.co/assets/15/39/nutella_chocolate_cake2.jpg" class = "img1">
+                    <p>Cake 5</p>
+                    <span class = "btnspan">
+                        <button class = "btn" value = "discard">Buy</button>
+                        <button id = "btnplus">+</button>
+                        <button id = "btnminus">-</button>
+                        <span class = "price">20.99$</span>
+                    </span>
+                    <div class = "fav-div">
+                    <div class="fav-div-1">
+                        <span class="span1">Add to favorite</span><i class = "fa fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class = "image-box1">
+                    <img src = "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gifts/20180928/20180928210208.jpg" class = "img1">
+                    <p>Cake 6</p>
+                    <span class = "btnspan">
+                        <button class = "btn" value = "discard">Buy</button>
+                        <button id = "btnplus">+</button>
+                        <button id = "btnminus">-</button>
+                        <span class = "price">20.99$</span>
+                    </span>
+                    <div class = "fav-div">
+                    <div class="fav-div-1">
+                        <span class="span1">Add to favorite</span><i class = "fa fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class = "feedbacks">
+        <div class = "title-box">
+            <h1 class = "title">Our Clients</h1>
+        </div>
+        <div class = "clients-div">
+            <div class = "client">
+                    <div class="information">
+                        <img src = "https://dergreif-online.de/www/wp-content/uploads/2016/07/Timothy_hoch.jpg" class="face1"><p class = "names">Arthur Williams</p>
+                        <div class = "circle1"></div><div class = "circle2"></div><div class = "circle3"></div>
+                        <div class = "feedback"><h1>Nice! Its realy good.</h1></div>
+                    </div>
+                    <div class="information info">
+                        <img src="https://media.istockphoto.com/id/1270067126/photo/smiling-indian-man-looking-at-camera.jpg?s=612x612&w=0&k=20&c=ovIQ5GPurLd3mOUj82jB9v-bjGZ8updgy1ACaHMeEC0=" class="face1"><p class = "names">Oliver Brown</p>
+                        <div class = "circle1"></div><div class = "circle2"></div><div class = "circle3"></div>
+                        <div class = "feedback"><h1>Its a very tasty cake.</h1></div>
+                    </div>
+            </div>
+            <div class = "client">
+                <div class="format">
+                    <img src="https://media.istockphoto.com/id/1007763808/photo/portrait-of-handsome-latino-african-man.jpg?s=612x612&w=0&k=20&c=XPL1ukeC99OY8HBfNa_njDujOPf9Xz4yCEOo7O3evU0=" class = "face"><p class = "names1">James Mans</p>
+                    <div class = "circle4"></div><div class = "circle5"></div><div class = "circle6"></div>
+                    <div class = "feedback"><h1>It has an indescriblable taste</h1></div>
+                </div>
+                <div class="format info">
+                    <img src="https://www.cypcs.org.uk/wpcypcs/wp-content/uploads/2022/10/thumbnail.png" class = "face"><p class = "names1">Sophia Murray</p>
+                    <div class = "circle4"></div><div class = "circle5"></div><div class = "circle6"></div>
+                    <div class = "feedback"><h1>I had never eaten such a delicions cake</h1></div>
+                </div>
+            </div>
+         </div>
+    </section>
+    <section class = "footer">
+        <div class = "creator">
+            <p>Created by Narek</p>
+        </div>
+        <div class = "delivery">
+            <h1 style = "font-size:32px">Delivery</p>
+            <i class = "fa fa-truck"></i>
+            <p style = "font-size:18px">10:00 - 20:00 during 1 working day</p>
+        </div>
+        <div class = "contact">
+            <h1 style = "font-size:32px">Contact us</h1>
+            <p>+723 4212 3421</p>
+            <p>+753 5782 0961</p>
+            <p>+703 4876 5648</p>
+        </div>
+    </section>
+    <script src = "main.js">
+        
+    </script>
+</body>
+</html>

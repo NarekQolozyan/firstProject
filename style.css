@@ -1,0 +1,580 @@
+*{
+    margin: 0;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(77, 53, 154);
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+.logo{
+    width: 100px;
+    height: 70px;
+}
+.title-box{
+    width: 100%;
+    text-align: center;
+}
+.title{
+    font-size: 80px;
+    margin: 10px 0;
+    color: #d3d28e;
+}
+.mydiv1{
+    width: 50%;
+    display: flex;
+    margin-left: 40px;
+    gap: 50px;
+    position: relative ;
+}
+.mydiv1 p{
+    color: white;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.p1::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    top: 38px;
+    left: -100%;
+    background-color: red;
+    position: absolute; 
+}
+.p1:hover::after{
+    left: -5px;
+    top: 28px
+}
+.p2::after{
+    content: '';
+    width: 105px;
+    height: 3px;
+    top: 38px;
+    left: -100%;
+    background-color: red;
+    position: absolute; 
+}
+.p2:hover::after{
+    left: 105px;
+    top: 28px
+}
+.p3::after{
+    content: '';
+    width: 65px;
+    height: 3px;
+    top: 38px;
+    left: -100%;
+    background-color: red;
+    position: absolute; 
+}
+.p3:hover::after{
+    left: 250px;
+    top: 32px;
+}
+.p4::after{
+    content: '';
+    width: 65px;
+    height: 3px;
+    top: 38px;
+    left: -100%;
+    background-color: red;
+    position: absolute; 
+}
+.p4:hover::after{
+    left: 350px;
+    top: 28px
+}
+.mydiv2{
+    width: 50%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.lightdark{
+    border-radius: 40px;
+    margin-left: 15px;
+}
+.btn1{
+    width: 70px;
+    height: 30px;
+    background-color: white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 15px;
+}
+.btn2{
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+.btn1:hover{
+    background-color: rgb(16, 162, 21);
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: rgb(211, 104, 124);
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+.mydiv2 .fa{
+    color: white;
+    font-size: 24px;
+    margin-top: 3px;
+    margin-right: 10px;
+    position: relative;
+}
+#list{
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    display: none;
+}
+.log-in{
+    width: 300px;
+    height: 340px;
+    background-color: rgb(228, 195, 195);
+    margin: auto;
+    padding: 30px;
+    border-radius: 30px;
+    display: none;
+    position: absolute;
+    z-index: 3;
+    left: 38%;
+    top: 20%;
+}
+.sign-up{
+    width: 300px;
+    height: 490px;
+    background-color: rgb(228, 195, 195);
+    margin: auto;
+    padding: 30px;
+    border-radius: 30px;
+    display: none;
+    position: absolute;
+    z-index: 3;
+    left: 38%;
+    top: 20%;
+}
+.signIn-box{
+    position: relative;
+}
+.logIn-box{
+    position: relative;
+}
+.fa{
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.sign-up p{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    margin-right: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.log-in h1{
+    font-size: 36px;
+    padding: 15px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.log-in p{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    margin-right: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.inp1{
+    width: 80%;
+    border: none;
+    height: 20px;
+    border-radius: 10px;
+}
+.inp2{
+    width: 80%;
+    border: none;
+    height: 20px;
+    border-radius: 10px;
+}
+.log-in button{
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 20px;
+}
+.log-in button:hover{
+    background-color: rgb(102, 148, 102);
+    color: white;
+    cursor: pointer;
+}
+.sign-up button{
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 20px;
+}
+.sign-up button:hover{
+    background-color: rgb(211, 104, 124);
+    color: white;
+    cursor: pointer;
+}
+.sign-up .fa{
+    font-size: 28px;
+    position: absolute;
+    top: -25px;
+    right: -15px;
+}
+.log-in .fa{
+    font-size: 28px;
+    position: absolute;
+    top: -25px;
+    right: -15px;
+}
+.header2{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.image-box1{
+    width: 300px;
+    height: 400px;
+    border-radius: 50px;
+    background-color: rgb(237, 230, 230);
+    position: relative;
+}
+.image-box1:hover{
+    box-shadow: -1px 0px 14px 4px rgba(0,0,0,0.71);
+}
+.img1{
+    width: 80%;
+    height: 200px;
+    border-radius: 20px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    transition: 1s;
+}
+.img1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.image-box1 p{
+    position: absolute;
+    top: 60%;
+    left: 34%;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btnspan{
+    display: flex;
+    width: 80%;
+    position: absolute;
+    bottom: 20%;
+    left: 28%;
+}
+.quantity{
+    width: 20px;
+}
+.image-box1 .price{
+    width: 32%;
+    font-size: 18px;
+    background-color: rgb(179, 113, 39);
+    color: whitesmoke;
+    border-radius: 20px;
+    text-align: center;
+}
+#btnplus{
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+    margin: 0 5px;
+}
+#btnplus:hover{
+    background-color: rgb(191, 134, 29);
+    transition: .3s;
+    color: black;
+}
+#btnminus{
+    width: 27px;
+    height: 27px;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+    margin: 0 5px;
+}
+#btnminus:hover{
+    background-color: #000;
+    transition: .3s;
+    color: white;
+}
+.btn{
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+}
+.btn:hover{
+    background-color: rgb(91, 201, 91);
+    transition: .5s;
+    color: white;
+}
+.fav-div-1{
+    width: 145px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.fa-star{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+.fav-div-1 .fa{
+    font-size: 18px;
+}
+.fav-div{
+    position: absolute;
+    bottom: 10%;
+    left: 24%;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: .7s;
+}
+.fav-div:hover{
+    background-color: rgb(233, 241, 18);
+    cursor: pointer;
+    transition: .7s;
+}
+.mydiv1 a{
+    text-decoration: none;
+    color: white;
+}
+.feedbacks{
+    background-color: #53585b;
+    border-radius: 200px;
+}
+.clients-div{
+    width: 100%;
+    height: 500px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.client{
+    width: 21%;
+    margin: 0 60px;
+}
+.client .face1{
+    position: absolute;
+    bottom: -120%;
+    left: -86%;
+    width: 120px;
+    height: 120px;
+    margin: 10px 0 0 20px;
+    border-radius: 50%;
+}
+.client .face{
+    position: absolute;
+    bottom: -125%;
+    right: -60%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.circle1{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    left: -20%;
+    background-color: rgb(181 127 80 / 69%);
+}
+.circle4{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -34%;
+    right: -16%;
+    background-color: rgb(181 127 80 / 69%);
+}
+.circle2{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -22%;
+    left: -11%;
+    background-color: rgb(181 127 80 / 69%);
+}
+.circle5{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -24%;
+    right: -10%;
+    background-color: rgb(181 127 80 / 69%);
+}
+.circle3{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -8%;
+    left: -4%;
+    background-color: rgb(181 127 80 / 69%);
+}
+.circle6{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -8%;
+    right: -4%;
+    background-color: rgb(181 127 80 / 69%);
+}
+.information{
+    width: 70%;
+    height: 20%;
+    display: flex;
+    position: relative;
+    background-color: #413737;
+    border-radius: 70px;
+    margin: 0 auto;
+}
+.format{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    position: relative;
+    background-color: #413737;
+    border-radius: 70px;
+    margin: 0 auto;
+}
+.info{
+    margin-top: 100px;
+}
+.names{
+    color: wheat;
+    font-size: 18px;
+    position: absolute;
+    bottom: -145%;
+    left: -74%;
+}
+.names1{
+    color: wheat;
+    font-size: 18px;
+    position: absolute;
+    bottom: -150%;
+    right: -56%;
+}
+.information h1{
+    font-size: 18px;
+    color: #fff;
+}
+.format h1{
+    font-size: 18px;
+    color: #fff;
+}
+.feedback{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.footer{
+    width: 100%;
+    height: 40%;
+    background-color: rgba(36, 60, 82, 0.244);
+    display: flex;
+}
+.footer div{
+    width: 33%;
+    text-align: center;
+}
+.delivery{
+    position: relative;
+    margin: 10px 0;
+}
+.delivery .fa{
+    font-size: 72px;
+    color: black;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    transform: rotateY(180deg);
+}
+.delivery p{
+    font-size: 22px;
+}
+.contact{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.contact p:hover{
+    color: white;
+    cursor: pointer;
+}
+.creator{
+    display: flex;
+    align-items: center;
+}
+.creator p{
+    width: 100%;
+    font-family: "Pacifico rev=2";
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 700;
+}
+.creator p:hover{
+    color: white;
+    cursor: pointer;
+}
